@@ -1,0 +1,2 @@
+# IdzamS
+Aplikasi Kotlin
