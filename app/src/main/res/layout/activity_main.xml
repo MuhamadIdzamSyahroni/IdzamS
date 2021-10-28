@@ -1,29 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:layout_width="285dp"
+        android:layout_height="334dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/cool" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan Namamu"
-        android:textSize="30sp"
-        android:id="@+id/nama_edit_text" />
-    <Button
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
-        android:layout_below="@+id/nama_edit_text"
-        android:textSize="30sp"
-        android:onClick="submit_btn" />
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:text="SILAHKAN LOGIN" />
+
+    <EditText
+        android:id="@+id/isiannama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        android:textSize="8pt" />
+
+    <EditText
+        android:id="@+id/pasword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isiannama"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        android:textSize="8pt" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pasword"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:ems="12"
+        android:text="Login"
+        android:onClick="submit_btn"/>
+
+
 
 
 </RelativeLayout>
